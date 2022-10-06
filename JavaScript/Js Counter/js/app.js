@@ -13,15 +13,15 @@
       }
 
       //Select the counter text
-      const counter = document.querySelector('#counter')
-      counter.textContent = count
+      const counters = document.querySelector('#counter')
+      counters.textContent = count
 
       if (count < 0 ){
-        counter.style.color = 'red'
+        counters.style.color = 'red'
       } else if (count > 0){
-        counter.style.color = 'green'
+        counters.style.color = 'green'
       } else {
-        counter.style.color = '#333333'
+        counters.style.color = '#333333'
       }
     })
   })
