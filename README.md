@@ -1,8 +1,7 @@
 # Hacktoberfest 2022 (Accept all the pull request)
 
 
-### Create a pull request, I will accept all the pull requests in this repository within a day. 
-Thanks.
+### Create a Pull Request(PR), I will accept all the pull requests in this repository within hours. 
 
 ### How?
 1. Follow Me
