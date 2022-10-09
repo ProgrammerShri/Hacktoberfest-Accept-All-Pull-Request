@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="stylesheet1.css">
+</head>
+<body>
+	<div id="header">
+		<h3>automata & formal</h3>
+	</div>
+	<div id="navbar">
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href=""> Extended dfa</a></li>
+			<li><a href=""> NFA</a></li>
+		</ul>
+	</div>
+	<div class="sidebar">
+		<h2>Lectures</h2>
+		<p>10:30- Theory of automata</p>
+		<p>11:30- Programming language</p>
+		<p>01:30- Mathematics</p>
+		<p>02:30- Human values</p>
+	</div>
+	<div class="sidebar">
+		<h2>Labs</h2>
+		<p>10:30- Python lab</p>
+		<p>11:30- Os lab</p>
+		<p>01:30- web-designing lab</p>
+	</div>
+	<div>
+		<img class="imagesidebar" src="avi.jpg">
+	</div>
+	<div class="main"> <h1> Theory of automata</h1> 
+		<p>The DFA define a language - the set of all strings that result in a sequence of state transitions from the start state to an accepting state. This language needs to be precisely defined. For this purpose, it is required to extend transition function to strings (from symbols). Extended transition function denoted by ˆδ is a function that takes a state q and a string w as arguments and returns a state p (the state that the automaton reaches when starting in state q and processing the string w). Formally, ˆδ : Q X Σ* → Q</p>
+        <h1>Definition by induction on the length of the input string w</h1>
+        <p>Basis: ˆδ(q, ) =q i.e. If we are in a state q and read no inputs, then we are still in state q
+           Then: ˆδ(q, w) =δ(ˆδ(q, x), a)
+           To compute ˆδ(q, w), first compute ˆδ(q, x), the state that the automaton is in after processing all but the last symbol of w Suppose this state is p, i.e., ˆδ(q, x) =p. Then ˆδ(q, w) is what we get by making a transition from state p on input a- the last symbol of w.</p>
+	</div>
+	<div class="main"> <h1> DETERMINISTIC FINITE AUTOMATA Learning Outcomes</h1> 
+		<p>At the conclusion of the chapter, the student will be able to:<br>
+        Describe the components of a deterministic finite accepter (DFA)<br>
+        Describe the language accepted by a DFA<br>
+        Show that a particular language is regular</p>
+      <p> FSA (Finite State Automata) or DFA (Deterministic Finite Automata) are the simplest model of a computing device - a language recognition device. The input to DFAs is strings of symbols, delivered on a tape. The operation of an DFA proceeds at discrete steps. At each step of its operation DFA can read one symbol from the tape and can move ahead to read the next symbol. The purpose of DFA is to determine whether a given string written on the tape belongs to a particular language or not. Thus the set of inputs recognized at each particular step is fixed in the description of the particular DFA</p>
+	</div>
+    <div id="footer">
+    	<ul>
+			<li><a href="">About</a></li>
+			<li><a href=""> Contact</a></li>
+			<li><a href=""> Address</a></li>
+		</ul>
+		&copy; 2020 Avinash. All rights reserved.
+    </div>
+
+
+
+</body>
+</html>
