@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title> FORM</title>
+    <style>
+h3{
+  font-family: Arial; 
+  font-size: 25pt;         
+  font-style: normal; 
+  font-weight: bold; 
+  color:blue;
+  text-align: center; 
+  text-decoration: underline
+}
+
+table{
+  font-family: Arial; 
+  color:black; 
+  font-size: 11pt; 
+  font-style: normal;
+  font-weight: bold;
+  text-align:; 
+  background-color: lightyellow; 
+  border-collapse: ; 
+  border: 5px solid 
+}
+table.inner{
+  border: 0px
+}
+</style>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["First_Name","Last_Name"].value;
+  if (x == "") {
+    alert("Please fill up the name");
+    return false;
+  }
+}
+</script>
+</head>
+<body style="background-color:lightgreen" >
+  
+    <fieldset>
+    <legend > <h3 >Student Registration Form</h3></legend><b> 
+            <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+            <table align="center" cellpadding = "10">
+            <tr> <td>First Name: </td>
+    <td><input type="text" name="First_Name"> (max 30 characters a-z and A-Z)</td></tr>
+        <tr> <td> Last Name:</td>
+    <td><input type="text" name="Last_Name"> (max 30 characters a-z and A-Z)</td></tr>
+        <tr> <td>University Roll No:</td><td> <input type="number" name=""></td></tr>
+    <tr> <td>Mobile No:</td>
+        <td><input type="number"  name=""></td></tr>
+       <tr><td> Email:</td>
+        <td><input type="text" name=""></td>
+        </tr>
+        <tr>
+        <td>Gender:</td>
+        <td><input type="radio" name="1"> Male
+        <input type="radio" name="1">Female
+        <input type="radio" name="1">Other</td>
+    </tr>
+        <tr>
+         <td>Enter your date of birth:</td>
+        <td><input type="date" name=""></td>
+    </tr>
+        <tr>
+       <td> Father's Name:</td><td> <input type="text" name=""></td>
+   </tr>
+        <tr>
+            <td>Father's Mobile No:</td>
+            <td> <input type="number" name=""></td>
+        </tr>
+        <tr><td>Choose your mother tongue:</td>
+        <td><select>
+            <option >English</option>
+            <option >Hindi</option>
+         </select></td></tr>
+         <tr>
+         <td>Communication Address:</td><td><textarea name="Address" rows="4" cols="30"></textarea></td>
+     </tr>
+         <tr><td>Permanent Address:</td><td><textarea name="Address" rows="4" cols="30"></textarea></td></tr>
+         <tr><td>10th Percentage: </td><td><input type="number" name=""></td></tr>
+         <tr>
+
+<tr>
+<td>QUALIFICATION <br /><br /><br /><br /><br /><br /><br /></td>
+ 
+<td>
+<table>
+ 
+<tr>
+<td align="center"><b>Sl.No.</b></td>
+<td align="center"><b>Examination</b></td>
+<td align="center"><b>Board</b></td>
+<td align="center"><b>Percentage</b></td>
+<td align="center"><b>Year of Passing</b></td>
+</tr>
+ 
+<tr>
+<td>1</td>
+<td>Class X</td>
+<td><input type="text" name="ClassX_Board" maxlength="30" /></td>
+<td><input type="text" name="ClassX_Percentage" maxlength="30" /></td>
+<td><input type="text" name="ClassX_YrOfPassing" maxlength="30" /></td>
+</tr>
+ 
+<tr>
+<td>2</td>
+<td>Class XII</td>
+<td><input type="text" name="ClassXII_Board" maxlength="30" /></td>
+<td><input type="text" name="ClassXII_Percentage" maxlength="30" /></td>
+<td><input type="text" name="ClassXII_YrOfPassing" maxlength="30" /></td>
+</tr>
+ 
+<tr>
+<td>3</td>
+<td>Graduation</td>
+<td><input type="text" name="Graduation_Board" maxlength="30" /></td>
+<td><input type="text" name="Graduation_Percentage" maxlength="30" /></td>
+<td><input type="text" name="Graduation_YrOfPassing" maxlength="30" /></td>
+</tr>
+
+ 
+<tr>
+<td></td>
+<td></td>
+<td align="center">(10 char max)</td>
+<td align="center">(upto 2 decimal)</td>
+</tr>
+</table>
+ 
+</td>
+</tr>
+ 
+
+<tr>
+<td>GRADUATION  <br /><br /><br /><br /><br /><br /><br /></td>
+ 
+<td>
+<table>
+ 
+<tr>
+<td align="center"><b>Sl.No.</b></td>
+<td align="center"><b>Examination</b></td>
+<td align="center"><b>Semester</b></td>
+<td align="center"><b>Percentage</b></td>
+<td align="center"><b>Backlog</b></td>
+</tr>
+ 
+<tr>
+<td>1</td>
+<td></td>
+<td><input type="text" name="sem" maxlength="30" /></td>
+<td><input type="text" name="per" maxlength="30" /></td>
+<td><input type="text" name="back" maxlength="30" /></td>
+</tr>
+ 
+<tr>
+<td>2</td>
+<td></td>
+<td><input type="text" name="sem" maxlength="30" /></td>
+<td><input type="text" name="per" maxlength="30" /></td>
+<td><input type="text" name="back" maxlength="30" /></td>
+</tr>
+ 
+<tr>
+<td>3</td>
+<td></td>
+<td><input type="text" name="sem" maxlength="30" /></td>
+<td><input type="text" name="per" maxlength="30" /></td>
+<td><input type="text" name="back" maxlength="30" /></td>
+</tr>
+<tr>
+<td>4</td>
+<td></td>
+<td><input type="text" name="sem" maxlength="30" /></td>
+<td><input type="text" name="per" maxlength="30" /></td>
+<td><input type="text" name="back" maxlength="30" /></td>
+</tr>
+ 
+<tr>
+<td>5</td>
+<td></td>
+<td><input type="text" name="sem" maxlength="30" /></td>
+<td><input type="text" name="per" maxlength="30" /></td>
+<td><input type="text" name="back" maxlength="30" /></td>
+</tr>
+ 
+<tr>
+<td>6</td>
+<td></td>
+<td><input type="text" name="sem" maxlength="30" /></td>
+<td><input type="text" name="per" maxlength="30" /></td>
+<td><input type="text" name="back" maxlength="30" /></td>
+</tr>
+<tr>
+<td>7</td>
+<td></td>
+<td><input type="text" name="sem" maxlength="30" /></td>
+<td><input type="text" name="per" maxlength="30" /></td>
+<td><input type="text" name="back" maxlength="30" /></td>
+</tr>
+ 
+<tr>
+<td>8</td>
+<td></td>
+<td><input type="text" name="sem" maxlength="30" /></td>
+<td><input type="text" name="per" maxlength="30" /></td>
+<td><input type="text" name="back" maxlength="30" /></td>
+</tr>
+
+ 
+<tr>
+<td></td>
+<td></td>
+<td align="center">(10 char max)</td>
+<td align="center">(upto 2 decimal)</td>
+</tr></table>
+</tr>
+<td colspan="2" align="center">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</td>
+</tr>
+ 
+        </fieldset>
+
+  </form>
+
+</body>
+</html>
