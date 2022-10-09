@@ -13,4 +13,5 @@
 https://github.com/ProgrammerShri/Hacktoberfest-Accept-All-Pull-Request
 
 Share This Repository  With your friends.
+This Repository is valid on hacktoberfest
 
