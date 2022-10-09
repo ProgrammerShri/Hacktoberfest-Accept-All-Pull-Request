@@ -1,10 +1,12 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Widget</title>
 </head>
+
 <body>
     <main>
         <section class="text">
@@ -33,16 +35,18 @@
         </section>
     </main>
 </body>
+
 </html>
 
 <style>
     main {
         display: grid;
         height: calc(100vh - 2em);
-        margin: 1em 1em;
+        margin: 1em 1em 1em 1em;
         grid-template-rows: min-content 1fr min-content;
         grid-template-columns: repeat(1fr, 6);
     }
+
     main,
     button,
     input {
@@ -57,9 +61,11 @@
         justify-content: start;
         padding: 1em;
     }
+
     .controle-title {
         width: 100%;
     }
+
     .controle button,
     .controle input {
         margin: 0.5rem 0.5rem;
@@ -68,13 +74,16 @@
         border: none;
         background-color: hsl(0deg 0% 97%);
     }
+
     .controle button.active {
         background-color: hsl(0deg 3% 88%);
     }
+
     .controle input {
         width: 100%;
         padding: 0.2rem;
     }
+
     .text {
         grid-row: 1;
         grid-column: span 6;
@@ -90,6 +99,7 @@
         position: relative;
         outline: none;
     }
+
     .text-field::after {
         content: "Text Here";
         transition: opacity 0.3s ease-in-out;
@@ -101,6 +111,7 @@
         bottom: 0;
         left: 0;
     }
+
     .text-field.hidden::after {
         opacity: 0;
     }
@@ -108,42 +119,84 @@
     .size {
         grid-column: 2;
     }
+
     .alignment {
         grid-column: 3;
     }
+
     .style {
         grid-column: 4;
     }
+
     .font {
         grid-column: 5;
         justify-content: start;
     }
 
     .size-btn.active {
-        -webkit-animation: FLASH 0.4s ; /* Safari 4+ */
-        -moz-animation:    FLASH 0.4s ; /* Fx 5+ */
-        -o-animation:      FLASH 0.4s ; /* Opera 12+ */
-        animation:         FLASH 0.4s ;
+        -webkit-animation: FLASH 0.4s;
+        /* Safari 4+ */
+        -moz-animation: FLASH 0.4s;
+        /* Fx 5+ */
+        -o-animation: FLASH 0.4s;
+        /* Opera 12+ */
+        animation: FLASH 0.4s;
     }
+
     @-webkit-keyframes FLASH {
-        0%   { background-color: hsl(0deg 0% 97%); }
-        50% { background-color: hsl(0deg 3% 88%);}
-        100% { background-color: hsl(0deg 0% 97%); }
+        0% {
+            background-color: hsl(0deg 0% 97%);
+        }
+
+        50% {
+            background-color: hsl(0deg 3% 88%);
+        }
+
+        100% {
+            background-color: hsl(0deg 0% 97%);
+        }
     }
+
     @-moz-keyframes FLASH {
-        0%   { background-color: hsl(0deg 0% 97%); }
-        50% { background-color: hsl(0deg 3% 88%);}
-        100% { background-color: hsl(0deg 0% 97%); }
+        0% {
+            background-color: hsl(0deg 0% 97%);
+        }
+
+        50% {
+            background-color: hsl(0deg 3% 88%);
+        }
+
+        100% {
+            background-color: hsl(0deg 0% 97%);
+        }
     }
+
     @-o-keyframes FLASH {
-        0%   { background-color: hsl(0deg 0% 97%); }
-        50% { background-color: hsl(0deg 3% 88%);}
-        100% { background-color: hsl(0deg 0% 97%); }
+        0% {
+            background-color: hsl(0deg 0% 97%);
+        }
+
+        50% {
+            background-color: hsl(0deg 3% 88%);
+        }
+
+        100% {
+            background-color: hsl(0deg 0% 97%);
+        }
     }
+
     @keyframes FLASH {
-        0%   { background-color: hsl(0deg 0% 97%); }
-        50% { background-color: hsl(0deg 3% 88%);}
-        100% { background-color: hsl(0deg 0% 97%); }
+        0% {
+            background-color: hsl(0deg 0% 97%);
+        }
+
+        50% {
+            background-color: hsl(0deg 3% 88%);
+        }
+
+        100% {
+            background-color: hsl(0deg 0% 97%);
+        }
     }
 </style>
 
@@ -162,23 +215,23 @@
     function textSize(btn) {
         const computed = window.getComputedStyle(user_text).fontSize;
         const current = numberfy(computed);
-        const size = btn.id === "increment" 
+        const size = btn.id === "increment"
             ? Math.min(200, current + 20)
             : Math.max(18, current - 20);
-        
-        if(btn.classList.contains("active")) btn.classList.remove("active");
+
+        if (btn.classList.contains("active")) btn.classList.remove("active");
         btn.classList.add("active");
         setTimeout(() => btn.classList.remove("active"), 100)
         return user_text.style.fontSize = size;
     }
 
-    
+
     function textAlign(btn) {
         const activeAlignment = btn.parentElement.querySelector(".active");
         if (activeAlignment) activeAlignment.classList.remove("active");
         user_text.style.textAlign = btn.id;
         btn.classList.add("active");
-    
+
     }
 
     function textStyle(btn) {
@@ -217,5 +270,5 @@
     user_font.addEventListener("focus", () => user_font.select());
     user_text.addEventListener("focus", hidePlaceholder);
     user_text.addEventListener("blur", showPlaceholder);
-    
+
 </script>
