@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> FORM</title>
+</head>
+<body style="background-color: grey" >
+	<form>
+		<fieldset>
+		<legend > <h3 >Fill the informations</h3></legend> First Name: <br>
+		<input type="text" name=""><br>
+		Last Name: <br>
+		<input type="text" name=""><br>
+		<b> Mobile No:<br></b>
+        <input type="number"  name=""><br>
+        Email:<br>
+        <input type="text" name=""><br>
+        Gender:
+        <br>
+        <input type="radio" name="1"> Male
+        <input type="radio" name="1">Female
+        <input type="radio" name="1">Other<br><br>
+        Choose your mother tongue:
+        <select>
+        	<option >English</option>
+        	<option >Hindi</option>
+        	<option >Bhojpuri</option>
+         </select>
+        
+<br><br>
+        Enter your date of birth:
+        <input type="date" name=""><br><br>
+        <input type="submit" name="">
+        </fieldset>
+
+	</form>
+
+</body>
+</html>
