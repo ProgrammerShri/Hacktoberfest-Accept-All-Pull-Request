@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+body {
+    background: #f9fafe;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+
+}
+
+.profile-image {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 10px;
+}
+
+/* .noti-content {
+    color: #959ba7;
+} */
+
+.title {
+    font-weight: 700;
+}
+
+.name {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.name:hover {
+    color: #043080;
+}
+
+.badge-noti {
+    background: #062a68;
+    color: white;
+}
+
+.read-text {
+    color: grey;
+    text-decoration: none;
+}
+
+.noti {
+    padding: 14px;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+
+.bold-grey {
+    color: #5c636d;
+    font-weight: 700;
+}
+
+.time {
+    color: #959ba7;
+}
+
+.unread::after {
+    content: url(./assets/images/dot.svg);
+    margin-left: 7px;
+}
+
+.unread-bg {
+    background: #f6fafd;
+}
+
+.msg-card:hover {
+    background: #ecf7ff;
+    cursor: pointer;
+}
+
+.blue-text {
+    color: #002365;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.chess-img:hover {
+    border: 3px solid #d2ebff;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0px;
+
+}
+
+.chess-img {
+    padding: 3px;
+}
+
+.bold-grey:hover,
+.read-text:hover {
+    color: #002365;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.read-bg {
+    background: #ffffff;
+}
+
+
+/* Mobile CSS */
+
+@media (max-width: 575.98px) {
+    .mob-card {
+        width: 100% !important;
+        margin: 0px !important;
+    }
+}

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Notification Page</title>
+</head>
+
+<body>
+    <div class="card  my-5 w-50 mob-card border-0 rounded-3 shadow-sm p-4 mx-auto">
+        <div class="top d-flex justify-content-between mb-4">
+            <h5 class="title">Notifications <span class="badge badge-noti">3</span></h5>
+            <a href="#" class="read-text" onclick="readmsg()">Mark all as read</a>
+            <!-- <button onclick="readmsg()">Add Class</button> -->
+        </div>
+        <div class="notifications">
+            <div class=" noti d-flex align-items-center unread-bg">
+                <img src="./assets/images/avatar-mark-webber.webp" alt="avatar1" class="profile-image">
+                <div class="noti-text ml-2">
+                    <div class="noti-content unread">
+                        <span class="name">Mark Webber</span> reacted to your recent post <span class="bold-grey">My
+                            first
+                            tournament today!</span>
+                    </div>
+                    <div class="time">1m ago</div>
+                </div>
+            </div>
+            <div class=" noti d-flex align-items-center unread-bg">
+                <img src="./assets/images/avatar-angela-gray.webp" alt="avatar1" class="profile-image">
+                <div class="noti-text ml-2">
+                    <div class="noti-content unread">
+                        <span class="name">Angela Gray</span> followed you
+                    </div>
+                    <div class="time">5m ago</div>
+                </div>
+            </div>
+            <div class=" noti d-flex align-items-center unread-bg" id="read">
+                <img src="./assets/images/avatar-jacob-thompson.webp" alt="avatar1" class="profile-image">
+                <div class="noti-text ml-2">
+                    <div class="noti-content unread">
+                        <span class="name">Jacob Thompson</span> has joined your group <span class="blue-text"> Chess
+                            Club</span>
+                    </div>
+                    <div class="time">1day ago</div>
+                </div>
+            </div>
+            <div class=" noti d-flex align-items-start ">
+                <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="avatar1" class="profile-image">
+                <div class="noti-text ml-2">
+                    <div class="noti-content ">
+                        <span class="name"> Rizky Hasanuddin </span>sent you a private message
+                    </div>
+                    <div class="time">5 days ago</div>
+                    <div class="card p-3 mt-2 msg-card ">
+                        Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+                        I'm already having lots of fun and improving my game.
+                    </div>
+                </div>
+            </div>
+            <div class=" noti d-flex align-items-center justify-content-between ">
+                <div class="d-flex">
+                    <img src="./assets/images/avatar-kimberly-smith.webp" alt="avatar1" class="profile-image">
+                    <div class="noti-text ml-2">
+                        <div class="noti-content ">
+                            <span class="name"> Kimberly Smith </span> commented on your picture
+                        </div>
+                        <div class="time">1 week ago</div>
+                    </div>
+                </div>
+                <img src="./assets/images/image-chess.webp" alt="" class="profile-image chess-img">
+            </div>
+            <div class=" noti d-flex align-items-start">
+                <img src="./assets/images/avatar-nathan-peterson.webp" alt="avatar1" class="profile-image">
+                <div class="noti-text ml-2">
+                    <div class="noti-content ">
+                        <span class="name">Nathan Peterson </span> reacted to your recent post <span class="bold-grey">5
+                            end-game strategies to increase your win rate</span>
+                    </div>
+                    <div class="time">2 weeks ago</div>
+                </div>
+            </div>
+            <div class=" noti d-flex align-items-center">
+                <img src="./assets/images/avatar-anna-kim.webp" alt="avatar1" class="profile-image">
+                <div class="noti-text ml-2">
+                    <div class="noti-content ">
+                        <span class="name"> Anna Kim </span>left the group
+                        <span class="blue-text"> Chess
+                            Club</span>
+                    </div>
+                    <div class="time">2 weeks ago</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="./script.js"></script>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
