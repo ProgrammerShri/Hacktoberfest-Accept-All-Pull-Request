@@ -3,28 +3,26 @@
 let numberOfDrumButtons = document.querySelectorAll(".drum").length;
 
 for (let i = 0; i < numberOfDrumButtons; i++) {
-
-  document.querySelectorAll("button")[i].addEventListener("click", function() {
-
+  document.querySelectorAll("button")[i].addEventListener("click", function () {
     var buttonInnerHTML = this.innerHTML;
 
     makeSound(buttonInnerHTML);
 
     buttonAnimation(buttonInnerHTML);
-
-    });
+  });
 }
 
 // For detecting keypress
 
-document.addEventListener("keydown", function(event){
+document.addEventListener("keydown", function (event) {
   makeSound(event.key);
   buttonAnimation(event.key);
 });
 
-function makeSound(key){
+function makeSound(key) {
   switch (key) {
-    case "w":XMLDocument
+    case "w":
+      XMLDocument;
       var tom1 = new Audio("sounds/tom-1.mp3");
       tom1.play();
       break;
@@ -53,19 +51,17 @@ function makeSound(key){
       kick.play();
       break;
 
-    default: console.log(buttonInnerHTML);
+    default:
+      console.log(buttonInnerHTML);
   }
 }
 
-
-function buttonAnimation(currentkey){
-
+function buttonAnimation(currentkey) {
   var activeButton = document.querySelector("." + currentkey);
 
-  activeButton.classList.add("pressed")
-  
-  setTimeout(function() {
+  activeButton.classList.add("pressed");
+
+  setTimeout(function () {
     activeButton.classList.remove("pressed");
   }, 100);
-
 }
