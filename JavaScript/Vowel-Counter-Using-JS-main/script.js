@@ -1,6 +1,5 @@
 const vowels = document.querySelector("#vowels");
 const textArea = document.querySelector(".textArea textarea");
-console.log(vowel);
 
 let vowel = 0;
 
